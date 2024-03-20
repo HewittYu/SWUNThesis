@@ -11,8 +11,8 @@
 再次感谢欧学长对于SMU-Thesis LaTeX 模板的开发和贡献,祝愿未来科研与工作一切顺利！也希望后续使用的同学们可以根据需求继续完善Master-Professional LaTeX 和Master-Research LaTeX 模板，也希望后续的修改可以继续补充在该附录使用许可中。
 
 # SWUNThesis 是什么？
-SWUNThesis 为 **S**outh**W**est **U**niversity for **N**ationalities **Thesis** LaTeX Template 之缩写。
-或**S**outhwest **M**inzu **U**niversity **Thesis**
+SWUNThesis 为 **S**outh**W**est **U**niversity for **N**ationalities **Thesis** LaTeX Template 之缩写或**S**outhwest **M**inzu **U**niversity **Thesis**
+
 本宏包旨在建立一个简单易用的西南民族大学学位论文模板，当前仅支持本科学士论文，对其他格式（如科技论文、报告、硕士学位论文等）的支持会陆续加入（可能？）。
 
 使用过程中若遇到任何问题，请按以下顺序提交问题：
