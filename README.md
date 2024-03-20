@@ -30,10 +30,7 @@ SWUNThesis 为 **S**outh**W**est **U**niversity for **N**ationalities **Thesis**
 
 ## 目录说明
 
-* [template](./template) - 此目录下为宏包的全部依赖文件
-* [images](./image) - 此目录下为本项目的图片说明
 * [example](./example) - 此目录下展示了一个完整的论文示例
-* [example-win](./example-win) - 此目录下展示了一个 Windows 平台下的完整的论文示例
 * [README.md](./README.md) - 项目说明
 * [LICENCE](./LICENSE) - 项目使用许可
 
