@@ -13,3 +13,11 @@
 * [figures](./figures) -  此文件夹中给出了导入图片的示例，本宏包自动增加了对 eps 高清图片的支持
 * [code](./code) - 此文件夹中包含论文中需要引用到的代码片段，本宏包支持从代码文件中自动引入代码。
 * [references](./references) - bibtex 文献库，可以从 GoogleScholar 中获取 BibTex 记录。
+
+
+**2024/03 修改说明**
+* 更新了.sty宏包文件，使其更符合当前学校要求的排版格式,文件存放于[template](./template)，命名为[swunthesis-new.sty](./template/swunthesis-new.sty)
+* 精简了整体框架，直接在[main.tex](./main.tex)文件中加入各章节（标题、作者信息，中英文摘要，正文内容）
+* 移除[content](./content)文件夹
+* 其余部分保留
+* 2024 by Boyang Yu, 使用说明遵循原版本。

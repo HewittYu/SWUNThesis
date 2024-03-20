@@ -1,32 +1,112 @@
-
 \documentclass[a4paper,twoside]{ctexrep} % 使用 CTEX 模板
-\usepackage{template/swunthesis}              % 引入 SWUNTHESIS 宏包
-\include{content/info} 	                      % 文章基本信息
+\usepackage{template/swunthesis-new}           
+\usepackage{ctex}
+\usepackage{fancyhdr}
+\usepackage{float} %强制固定图片位置
+\usepackage{enumitem}
 
+\title{基于\LaTeX 的西南民族大学本科学位论文排版格式}
+\entitle{The Typesetting Format of Undergraduate Dissertation of Southwest Minzu University based on \LaTeX }
+
+\author{于博洋}
+\enauthor{Boyang Yu}
+
+\adviser{蔡英}
+\enadviser{Adviser Name}
+\advtitle{副教授}
+
+\college{电子信息学院}
+\encollege{College of Electronics and Information}
+
+\major{人工智能}
+\enmajor{Computer Science and Technology}
+
+\grade{2020级}
+
+\id{20203100****}
+\date{\today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \makecover
 
 % 摘要
-\include{content/abstract}
+\begin{abstract}{关键词1；关键词2；关键词3}  %关键词位置
+这是一个中文摘要示例。
+\end{abstract}
+
+
+\begin{abstractEng}{Keywords 1; Keywords 2; Keywords 3}
+This is an example of Abrtract in English.
+\end{abstractEng}
+
+
+%按照毕业论文格式，重新设置页码（建议不要删除）
+\cfoot{\thepage} % 页码居中显示
+\setcounter{page}{1}
+\pagestyle{fancy}
 
 % 正文示例，按下方样式引入新的章节
-\include{content/ch01}
-\include{content/ch02}
-\include{content/ch03}
+\chapter{绪论}
+\section{示例章节}
+这是一个示例章节
+\section{国内外研究现状}
+这是一个示例引用。\textsuperscript{\cite{dongshihai2004}}
+
+\subsection{正文示例}
+\zihao{-4}
+
+\begin{enumerate}
+	\item 这是一个有序号排列。
+	\item 同上。
+\end{enumerate}
+
+\begin{itemize}
+	\item 这是一个无序号排列。
+	\item 同上。
+	
+\end{itemize}
+
+
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[scale=0.5]{figures/logo.jpg}
+	\caption{这是一个图片示例}\label{fig1}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\caption{这是一个表格示例}
+	\begin{tabular}{ccc}
+			\toprule
+			名称 & 名称 & 名称 \\ \midrule
+			内容 & 4, 5, 6 & 123 \\
+			内容 & 4, 5, 6 & 123 \\ \bottomrule
+	\end{tabular}
+\end{table}
+
+%结论
+\chapter*{结论}
+这是一个结论示例。
+
 
 % 附录
-\include{content/appendix}
+\include{appendix_new} % 阅读使用说明许可后，正式使用模板时移除此行代码。
 
 % 参考文献
-\nocite{*}
 \bibliographystyle{template/bstutf8}
 \clearpage
 \phantomsection
+\songti
+\linespread{1.0}   
+\centering
 \addcontentsline{toc}{chapter}{参考文献} % 向目录中添加参考文献条目
-\kaishu
+
 \bibliography{references/main}
 
 % 致谢
-\include{content/thanks}
+\chapter*{致谢}
+\addcontentsline{toc}{chapter}{致谢} % 此命令添加不含序号的标题至目录
+
+感谢老师、感谢亲人、感谢朋友。
 
 \end{document}
