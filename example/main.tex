@@ -1,0 +1,180 @@
+\documentclass[a4paper,twoside]{ctexrep} % 使用 CTEX 模板
+%\usepackage{template/swunthesis-master-professional} %学硕注释掉这一行
+\usepackage{template/swunthesis-master} %专硕注释掉这一行
+%===============================================
+\usepackage{ctex}
+\usepackage{fancyhdr}
+\usepackage{float} %强制固定图片位置
+\usepackage{enumitem}
+\usepackage{bicaption}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{titletoc}
+\usepackage{tabularx}
+\usepackage{lipsum} % 使用时删除
+
+\title{基于\LaTeX 的西南民族大学（专业）硕士学位论文排版格式}
+\entitle{The Typesetting Format of (Professional) Postgraduate Dissertation of Southwest Minzu University based on \LaTeX }
+
+\author{于博洋}
+\enauthor{Boyang Yu}
+
+\adviser{蔡英}
+\coadviser{XXX} % 校外导师（only专业硕士学位）
+
+
+\college{电子信息学院}
+\encollege{College of Electronics and Information}
+
+\major{人工智能} % only学术硕士学位
+\research{电子信息}  %学科门类 or 类别（领域）
+\resdirection{计算机视觉} % 研究方向
+\grade{2020级}
+
+\findate{2024年x月x日} %完成日期
+\date{\today} %定稿日期、签署授权书日期
+
+\usepackage{fancyhdr}
+\DeclareCaptionLabelFormat{english}{#1~\textbf{#2}}
+
+%设置目录样式，不建议修改
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titlecontents{chapter}[3em]{\zihao{4}\songti}{\contentslabel{2.5em}\hspace{1em}}{}{\titlerule*[8pt]{.}\contentspage}
+% 设置节目录样式为小四号宋体
+\titlecontents{section}[5em]{\zihao{-4}\bfseries \songti}{\contentslabel{2.5em}}{}{\titlerule*[8pt]{.}\contentspage} 
+% 设置小节目录样式为小四号宋体
+\titlecontents{subsection}[6.5em]{\zihao{-4}\songti}{\contentslabel{3em}}{}{\titlerule*[8pt]{.}\contentspage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\makecover
+
+\begin{study}
+
+\end{study}
+
+
+% 摘要
+\begin{abstract}{关键词1；关键词2；关键词3}  %关键词位置
+这是一个中文摘要示例。
+\end{abstract}
+
+\begin{abstractEng}{Keywords 1; Keywords 2; Keywords 3}
+This is an example of Abrtract in English.
+\end{abstractEng}
+
+
+\begin{tocc}
+
+\end{tocc}
+
+\begin{foreword}
+当撰写论文的前言时，应该包括一系列内容以引导读者对论文有清晰的认识。首先，前言应该简要介绍研究领域的背景和当前的研究现状，明确指出该研究所处的学术位置和价值所在，以及解决的具体问题或探索的内容。其次，要明确阐述论文的研究目的和意义，即研究的目标、动机和预期成果，让读者了解研究的价值和意义所在。接着，论文前言还应描述研究所采用的方法和技术路线，说明研究的思路和实施过程，确保读者对研究过程有清晰的认识。此外，还要对论文的结构安排进行简要介绍，包括各章节的主要内容和组织结构，以便读者更好地理解论文的整体架构和内容安排。最后，在前言中还可以包括对研究过程中获得支持和帮助的感谢之词，向给予帮助和支持的个人、机构表示诚挚的感谢。综上所述，论文的前言应该清晰明了地阐述研究背景、目的和意义，描述研究方法和技术路线，介绍论文的结构安排，同时表达对支持和帮助的感谢之情，为读者提供良好的阅读导引和理解框架。
+\end{foreword}
+
+\zihao{-4}
+%按照毕业论文格式，重新设置页码（建议不要删除）
+\cfoot{\thepage} % 页码居中显示
+\setcounter{page}{1}
+\pagestyle{fancy}
+
+% 正文示例，按下方样式引入新的章节
+\chapter{绪~~论}
+\section{示例章节1}
+\zihao{-4}
+这是一个示例章节.
+
+\lipsum[1-3] % 正式使用模版时删除
+\footnote{这里是脚注内容。}
+\section{国内外研究现状}
+这是一个示例引用。\textsuperscript{\cite{dongshihai2004}}
+
+\subsection{正文示例}
+\zihao{-4}
+以下是一个正文内容示例。
+
+\begin{enumerate}
+	\item 这是一个有序号排列。
+	\item 同上。
+\end{enumerate}
+
+\begin{itemize}
+	\item 这是一个无序号排列。
+	\item 同上。
+	
+\end{itemize}
+
+
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[scale=0.5]{figures/logo.jpg}
+	\caption{这是图片的中文标题}
+    \captionsetup{labelformat=english}
+    \caption*{\bfseries Figure~1-1~This is a sample of image} %需要手动修改
+    \label{fig1}
+\end{figure}
+\begin{table}[H]
+	\centering
+	\caption{这是一个表格示例}
+    \captionsetup{labelformat=english}
+    \caption*{\bfseries Table~1-1~This is a sample of table.}
+	\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X}
+			\toprule
+			名称 & 名称 & 名称 \\ \midrule
+			内容 & 4, 5, 6 & 123 \\
+			内容 & 4, 5, 6 & 123 \\ \bottomrule
+	\end{tabularx}
+\end{table}
+\chapter{示例章节}
+\lipsum[3] % 正式使用模版时删除
+\footnote{这里是脚注内容2。}
+
+\section{示例Section-2}
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[scale=0.1]{example/template/title.jpg}
+	\caption{这是一个图片示例2}
+    \captionsetup{labelformat=english}
+    \caption*{\bfseries Figure~2-1~This is a sample of image 2.}%需要手动修改
+    \label{fig2}
+\end{figure}
+
+\subsection{示例Subsection-2}
+\begin{table}[H]
+	\centering
+	\caption{这是一个表格示例2}
+    \captionsetup{labelformat=english}
+    \caption*{\bfseries Table~2-1~This is a sample of table 2.} %需要手动修改
+	\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X}
+			\toprule
+			名称 & 名称 & 名称 \\ \midrule
+			内容 & 4, 5, 6 & 123 \\
+			内容 & 4, 5, 6 & 123 \\ \bottomrule
+	\end{tabularx}
+    \label{tab2}
+\end{table}
+%结论
+\chapter*{结~~论}
+这是一个结论示例。
+
+
+% 附录
+\include{appendix_new} % 阅读使用说明许可后，正式使用模板时移除此行代码。
+
+% 参考文献
+\bibliographystyle{template/bstutf8}
+\clearpage
+\phantomsection
+\songti
+\linespread{1.0}   
+\centering
+\addcontentsline{toc}{chapter}{参考文献} % 向目录中添加参考文献条目
+
+\bibliography{references/main}
+
+% 致谢
+\chapter*{致~~谢}
+\addcontentsline{toc}{chapter}{致谢} % 此命令添加不含序号的标题至目录
+\raggedright
+\setlength{\parindent}{2em} % 设置首行缩进为2em，根据需要调整缩进大小
+感谢老师、感谢亲人、感谢朋友。
+\end{document}
