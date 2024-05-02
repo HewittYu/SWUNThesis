@@ -17,7 +17,7 @@
 - 重新调整了参考文献部分的排版格式
 - 使用协议遵循原始版本
 
-再次感谢欧学长对于SMU-Thesis LaTeX 模板的开发和贡献,祝愿未来科研与工作一切顺利！也希望后续使用的同学们可以根据需求继续完善Master-Professional LaTeX 和Master-Research LaTeX 模板，也希望后续的修改可以继续补充在该附录使用许可中。
+再次感谢欧学长对于SMU-Thesis LaTeX 模板的开发和贡献,祝愿未来科研与工作一切顺利！也希望后续使用的同学们可以根据需求继续完善Master-Professional LaTeX 和Master-Research LaTeX 模板。
 
 # SWUNThesis 是什么？
 SWUNThesis 为 **S**outh**W**est **U**niversity for **N**ationalities **Thesis** LaTeX Template 之缩写或**S**outhwest **M**inzu **U**niversity **Thesis**
