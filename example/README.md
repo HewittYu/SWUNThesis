@@ -16,7 +16,14 @@
 
 
 **2024/03 修改说明**
-* 更新了.sty宏包文件，使其更符合当前学校要求的排版格式,文件存放于[template](./template)，命名为[swunthesis-new.sty](./template/swunthesis-new.sty)
+* 更新了.sty宏包文件，使其更符合当前学校要求的本科论文排版格式,文件存放于[template](./template)，命名为[swunthesis-new.sty](./template/swunthesis-new.sty)
+* 精简了整体框架，直接在[main.tex](./main.tex)文件中加入各章节（标题、作者信息，中英文摘要，正文内容）
+* 移除[content](./content)文件夹
+* 其余部分保留
+* 2024 by Boyang Yu, 使用说明遵循原版本。
+
+* **2024/05 修改说明**
+* 更新了.sty宏包文件，增加了专业学位硕士和学术学位硕士排版格式,文件存放于[template](./template)
 * 精简了整体框架，直接在[main.tex](./main.tex)文件中加入各章节（标题、作者信息，中英文摘要，正文内容）
 * 移除[content](./content)文件夹
 * 其余部分保留
