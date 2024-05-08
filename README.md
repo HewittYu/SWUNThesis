@@ -101,12 +101,6 @@ make
 ├── code
 │   └── main.c
 ├── content
-│   ├── abstract.tex
-│   ├── appendix.tex
-│   ├── ch01.tex
-│   ├── ch02.tex
-│   ├── ch03.tex
-│   ├── info.tex
 │   └── thanks.tex
 ├── data
 │   └── data.csv
@@ -120,12 +114,15 @@ make
     ├── bstutf8.bst
     ├── logo.jpg
     ├── swunthesis.sty
+    ├── swunthesis-new.sty
+    ├── swunthesis-master.sty
+    ├── swunthesis-master-professional.sty
     └── title.jpg
 ```
 
 ## 样式预览
 
-在线预览：[PDF](./example/main.pdf)
+在线预览：[PDF](./main.pdf)
 
 ![](./images/1.jpg)
 ![](./images/2.jpg)
